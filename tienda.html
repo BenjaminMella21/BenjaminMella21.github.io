@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/aspectos.css">
+    <link rel="icon" href="img/FF.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand text-success text-dark h2 align-self-center" href="index.html"><img src="img/FF.png" alt="" width="60px">  FarmFood- SPA </a>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="informacion.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="solicitudes.html">Solicitudes De Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gestion.html">Gestión De Tareas</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center  d-flex" style="left: 70px;">
+                    <a class="nav navbar-nav d-flex justify-content-between mx-lg-auto" href="login.html">
+                        <i><img src="img/person-badge-fill.svg" alt="" width="30px"></i>
+                    </a>
+                    <a class="nav navbar-nav d-flex justify-content-between mx-lg-auto" href="compra.html">
+                        <i><img src="img/cart4.svg" alt="" width="30px"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-3">
+                <h1 class="h2 text-black pb-4">Categorías</h1>
+                <ul class="list-unstyled templatemo-accordion">
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-black text-decoration-none" href="#">
+                            Frutas
+                        </a>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-black text-decoration-none" href="#">
+                            Verduras
+                        </a>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-black text-decoration-none" href="#">
+                            Lácteos
+                        </a>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-black text-decoration-none" href="#">
+                            Carbohidratos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-inline shop-top-menu pb-3 pt-1">
+                            <li class="list-inline-item">
+                                <a class="h3 text-dark text-decoration-none text-black mr-3" href="#">Todo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="product-list">
+                    <!-- Los productos se cargarán aquí dinámicamente -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success text-white pb-3 border-light logo">FarmFood- SPA</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <a class="text-decoration-none" href="#"> <img src="img/telephone.svg" alt="" width="20px"> +56941211086</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none" href="#"> <img src="img/envelope.svg" alt="" width="20px"> farmfood.cl@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="tienda.html">Verduras</a></li>
+                        <li><a class="text-decoration-none" href="tienda.html">Frutas</a></li>
+                        <li><a class="text-decoration-none" href="tienda.html">Cereales</a></li>
+                        <li><a class="text-decoration-none" href="tienda.html">Lacteos</a></li>
+                        <li><a class="text-decoration-none" href="tienda.html">Organicos</a></li>
+                        <li><a class="text-decoration-none" href="tienda.html">Carbohidratos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Informacion</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="index.html">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="informacion.html">Sobre Nosotros</a></li>
+                        <li><a class="text-decoration-none" href="tienda.html">Productos</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center"style="padding: 5px;">
+                            <a class="text-light text-decoration-none" target="_blank" href="#"><i><img src="img/instagram.svg" width="25px"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center" style="padding: 5px;">
+                          <a class="text-light text-decoration-none" target="_blank" href="#"><i><img src="img/facebook.svg" width="25px"></i></a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2024 FarmFoodSPA.cl
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        // Datos de los productos
+        const products = [
+            { name: "Manzana Roja", price: 1200, img: "img/productos/manzana.png" },
+            { name: "Naranja", price: 1200, img: "img/productos/naranja.png" },
+            { name: "Arándano", price: 1700, img: "img/productos/arandano.png" },
+            { name: "Frutilla", price: 2000, img: "img/productos/frutilla.png" },
+            { name: "Plátano", price: 1300, img: "img/productos/platano.png" },
+            { name: "Granada", price: 1300, img: "img/productos/granada.png" },
+            { name: "Cebolla", price: 800, img: "img/productos/cebolla.png" },
+            { name: "Lechuga", price: 1200, img: "img/productos/lechuga.png" },
+            { name: "Pimenton", price: 1000, img: "img/productos/pimenton.png" },
+            { name: "Zanahoria", price: 800, img: "img/productos/zanahoria.png" },
+            { name: "Coliflor", price: 2000, img: "img/productos/coliflor.png" },
+            { name: "Queso Mantequilla", price: 25000, img: "img/productos/queso_mantequilla.png" },
+            { name: "Queso Cabra", price: 25000, img: "img/productos/queso_cabra.png" },
+            { name: "Leche De Vaca", price: 7000, img: "img/productos/leche.png" },
+            { name: "Porotos Negros", price: 5000, img: "img/productos/porotos_negros.png" }
+            
+        ];
+
+        // Función para agregar productos al carrito
+        function addToCart(product) {
+    let cart = JSON.parse(sessionStorage.getItem('cart')) || [];
+    const existingProduct = cart.find(item => item.name === product.name);
+
+    if (existingProduct) {
+        existingProduct.quantity += 1; // Incrementar la cantidad si ya existe
+    } else {
+        cart.push({ ...product, quantity: 1 }); // Agregar nuevo producto con cantidad inicial
+    }
+
+    sessionStorage.setItem('cart', JSON.stringify(cart));
+    alert(`${product.name} se ha añadido al carrito.`);
+    updateCart(); // Actualizar el contador en el navbar
+}
+
+
+        // Función para actualizar el carrito en el navbar
+        function updateCart() {
+            let cart = JSON.parse(sessionStorage.getItem('cart')) || [];
+            let cartLink = document.querySelector('[href="compra.html"]');
+            let cartCount = cart.length;
+            cartLink.innerHTML = `<i><img src="img/cart4.svg" alt="" width="30px"></i> (${cartCount})`; // Muestra la cantidad de productos
+        }
+
+        // Función para mostrar productos en la tienda
+        function displayProducts() {
+    const productList = document.getElementById("product-list");
+    productList.innerHTML = '';
+    products.forEach(product => {
+        productList.innerHTML += `
+            <div class="col-md-4">
+                <div class="card mb-4 product-wap rounded-0">
+                    <div class="card rounded-0">
+                        <img class="card-img rounded-0 img-fluid" src="${product.img}">
+                    </div>
+                    <div class="card-body text-center">
+                        <a href="#" class="h3 text-decoration-none">${product.name}</a>
+                        <p class="text-center mb-0">$${product.price} CLP</p>
+                        <button class="btn btn-primary" onclick='addToCart(${JSON.stringify(product)})'>Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+}
+
+        // Inicializar el carrito y mostrar productos al cargar la página
+        window.onload = function() {
+            updateCart();
+            displayProducts();
+        };
+    </script>
+</body>
+
+</html>
